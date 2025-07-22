@@ -1,0 +1,83 @@
+body {
+  font-family: "Baloo 2", cursive;
+  margin: 0;
+  background: url("images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+header {
+  background-color: rgba(255, 111, 97, 0.9);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.btn-group button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.btn-group button:hover {
+  background-color: #ff3b2e;
+}
+
+.meal-card {
+  background-color: #fff7e6;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.meal-card:hover {
+  transform: scale(1.02);
+}
+
+.meal-card h3 {
+  margin-top: 0;
+}
+
+.tips {
+  margin-top: 40px;
+  background-color: #fcebd4;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+footer {
+  background: #ff6f61;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}

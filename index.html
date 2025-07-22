@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annaarpan – Indian Meal Planner</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://png.pngtree.com/png-vector/20220727/ourlarge/pngtree-food-logo-png-image_6089719.png"
+        alt="Annaarpan Logo"
+        class="logo"
+      />
+      <h1>Annaarpan – Indian Meal Planner</h1>
+    </header>
+
+    <div class="container">
+      <p>Select your age category:</p>
+      <select id="age-select" onchange="showHealthyWeight()">
+        <option value="default">Select Age Group</option>
+        <option value="child">5–12 yrs</option>
+        <option value="teen">13–19 yrs</option>
+        <option value="adult">20–40 yrs</option>
+        <option value="senior">41+ yrs</option>
+      </select>
+      <p id="healthy-weight"></p>
+
+      <p>Select your meal type to get suggestions:</p>
+      <div class="btn-group">
+        <button onclick="showMeals('breakfast')">🍳 Breakfast</button>
+        <button onclick="showMeals('lunch')">🍱 Lunch</button>
+        <button onclick="showMeals('dinner')">🍽️ Dinner</button>
+        <button onclick="generateWeeklyPlan()">📅 Weekly Plan</button>
+        <img
+          src="https://i0.wp.com/nenow.in/wp-content/uploads/2022/12/image-317.png?fit=1200%2C800&ssl=1"
+          alt="HEALTHY INAIAN FOOD"
+        />
+      </div>
+
+      <div>
+        <label
+          ><input type="checkbox" id="vegOnly" onchange="applyFilter()" /> Veg
+          Only</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            id="highProteinOnly"
+            onchange="applyFilter()"
+          />
+          High Protein</label
+        >
+      </div>
+
+      <div id="meal-display"></div>
+
+      <div class="tips">
+        <h2>🌟 Daily Tip</h2>
+        <p id="daily-tip"></p>
+        <p>
+          Incorporate simple daily habits like staying hydrated, eating a
+          balanced diet, and exercising regularly to enhance your overall health
+          and well-being.
+        </p>
+
+        <h2>📜 Indian Food Myth</h2>
+        <p id="food-myth"></p>
+        <p>Myth: Non-vegetarian food makes you more aggressive.</p>
+        <p>Myth: Eating spicy food causes stomach ulcers.</p>
+        <p>Myth: Desi ghee is harmful for health.</p>
+        <p>Myth: Chewing gum stays in your stomach for seven years.</p>
+        <p>AND MANY MORE....</p>
+      </div>
+    </div>
+
+    <footer>Made with ❤️ in India | Annaarpan © 2025</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
